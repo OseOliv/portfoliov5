@@ -1,0 +1,25 @@
+<section class="experience-section">
+  <div class="experience-cards">
+    @for (experience of experiences; track $index) {
+    <div class="experience-card">
+      <div class="card-header">
+        <span class="period">{{ experience.period }}</span>
+        <h3 class="company">{{ experience.company }}</h3>
+        <h4 class="role">{{ experience.role }}</h4>
+      </div>
+
+      <div class="card-body">
+        <p class="description">{{ experience.description }}</p>
+
+        <div class="technologies">
+          <div class="tech-tags">
+            @for (tech of experience.technologies; track $index) {
+            <span class="tech-tag">{{ tech }}</span>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</section>

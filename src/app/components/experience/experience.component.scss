@@ -1,0 +1,101 @@
+.experience-section {
+  margin: 2rem 0;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+}
+
+.experience-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  background-color: #05092a;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  }
+
+  .card-header {
+    padding: 1.2rem;
+    background-color: #070d35;
+    border-bottom: 1px solid #0a1040;
+
+    .period {
+      font-size: 0.7rem;
+      color: #a9b2c3;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .company {
+      font-size: 1.1rem;
+      margin: 0 0 0.3rem;
+      color: var(--text-light);
+    }
+
+    .role {
+      font-size: 0.9rem;
+      margin: 0;
+      font-weight: 500;
+      color: #4dabf7;
+    }
+  }
+
+  .card-body {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+
+    .description {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      font-size: .8rem;
+      color: #ffffff;
+    }
+
+    .technologies {
+      .tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .tech-tag {
+          background-color: #0c1445;
+          color: #74c0fc;
+          padding: 0.3rem 0.7rem;
+          border-radius: 50px;
+          font-size: 0.6rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    .card-header {
+      padding: 1rem;
+
+      .company {
+        font-size: 1.2rem;
+      }
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+  }
+}
