@@ -7,8 +7,30 @@
   padding: 1rem;
 }
 
-app-header {
-  width: 100%;
+.app {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
   max-width: 70rem;
-  margin: 0 auto;
+  width: 100%;
+
+  .header {
+    width: 100%;
+    flex: 0.4;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .main {
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 4rem;
+  }
+
 }
+
