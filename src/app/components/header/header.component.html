@@ -8,6 +8,23 @@
     <div class="navbar">
       <app-navbar></app-navbar>
     </div>
+    <div class="social-links">
+      <a href="https://github.com/OseOliv" target="_blank" aria-label="GitHub">
+        <fa-icon [icon]="faGithub"></fa-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/oseoliveira/" target="_blank" aria-label="LinkedIn">
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+      </a>
+      <a href="https://x.com/ozzyoliv" target="_blank" aria-label="Twitter">
+        <fa-icon [icon]="faTwitter"></fa-icon>
+      </a>
+      <a href="https://www.instagram.com/ozzyoliveira" target="_blank" aria-label="Instagram">
+        <fa-icon [icon]="faInstagram"></fa-icon>
+      </a>
+      <a href="mailto:ozzyoliv@gmail.com" aria-label="Email">
+        <fa-icon [icon]="faEnvelope"></fa-icon>
+      </a>
+    </div>
   </div>
 
   <div class="right-side">
@@ -47,5 +64,7 @@
     <app-experience></app-experience>
     <hr class="section-divider">
     <app-project></app-project>
+    <app-footer></app-footer>
   </div>
+
 </section>
