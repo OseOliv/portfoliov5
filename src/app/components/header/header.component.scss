@@ -1,21 +1,27 @@
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: space-between;
   max-width: 70rem;
-  position: relative;
+  height: 100%;
 
   .header-content {
-    // position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 4rem;
 
+    .profile {
+      display: flex;
+    }
+
     .navbar {
       margin-top: 2rem;
     }
+  }
+
+  .social-link {
+    margin-top: 4rem;
   }
 }

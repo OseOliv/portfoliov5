@@ -1,16 +1,18 @@
 .social {
+  padding-bottom: 4rem;
+
   .social-links {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
 
     a {
-      color: #74c0fc;
+      color: #03e9f4;
       font-size: 1.5rem;
       transition: color 0.3s ease, transform 0.3s ease;
 
       &:hover {
-        color: #3f51b5;
+        color: #8a2be2;
         transform: translateY(-3px);
       }
     }
