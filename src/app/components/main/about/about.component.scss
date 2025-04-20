@@ -1,15 +1,12 @@
 .about {
   .about-profile {
+    padding-top: 1rem;
+
     .about-text {
       line-height: 1.42;
       color: #d7f5ff;
-    }
-
-    .skills {
-      strong {
-        color: #74c0fc;
-        font-size: 0.8rem;
-      }
+      font-weight: 500;
+      font-size: 0.9rem;
     }
   }
 }

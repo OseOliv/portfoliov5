@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 interface Experience {
   period: string;
@@ -7,15 +10,18 @@ interface Experience {
   role: string;
   description: string;
   technologies: string[];
+  website?: string;
 }
 
 @Component({
   selector: 'app-experience',
-  imports: [CommonModule],
+  imports: [CommonModule, FontAwesomeModule],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
+  faExternalLink = faExternalLinkAlt;
+
   experiences: Experience[] = [
     {
       period: 'Set 2024 - Atual',
@@ -31,6 +37,7 @@ export class ExperienceComponent {
         'Firebase',
         'Ruby',
       ],
+      website: 'https://afrosaude.com.br',
     },
     {
       period: 'Ago 2024 - Atual',
@@ -45,6 +52,7 @@ export class ExperienceComponent {
         'TypeScript',
         'AngularJS',
       ],
+      website: '#'
     },
   ];
 }

@@ -1,0 +1,11 @@
+<section class="skills-section">
+  <p class="skills-description">
+    Linguagens, frameworks e bibliotecas com as quais tenho experiência ou conhecimento:
+  </p>
+
+  <div class="skills-container">
+    @for (skill of skills; track skill) {
+      <div class="skill-tag">{{ skill }}</div>
+    }
+  </div>
+</section>

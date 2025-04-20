@@ -3,8 +3,17 @@
     @for (experience of experiences; track $index) {
     <div class="experience-card">
       <div class="card-header">
+        <a *ngIf="experience.website && experience.website !== '#'"
+           [href]="experience.website"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="corner-link">
+          <fa-icon [icon]="faExternalLink"></fa-icon>
+        </a>
         <span class="period">{{ experience.period }}</span>
-        <h3 class="company">{{ experience.company }}</h3>
+        <h3 class="company">
+          {{ experience.company }}
+        </h3>
         <h4 class="role">{{ experience.role }}</h4>
       </div>
 
