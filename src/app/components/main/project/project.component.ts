@@ -35,11 +35,15 @@ export class ProjectComponent {
         'Um aplicativo para calcular o Índice de Massa Corpórea (IMC)',
       image: 'imc.png',
       technologies: ['React.js', 'CSS', 'TypeScript'],
-      githubLink: 'https://github.com/OseOliv/op-memory-game',
+      githubLink: 'https://github.com/OseOliv/IMC-APP-TS',
     }
   ];
 
   navigateToGithub(url: string): void {
       window.open(url, '_blank');
+  }
+
+  viewMoreProjects(): void {
+    window.open('https://github.com/OseOliv', '_blank');
   }
 }

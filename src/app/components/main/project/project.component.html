@@ -1,16 +1,29 @@
 <div id="projects" class="projects-container">
+  <h2 class="projects-title">PROJETOS</h2>
   <div class="projects-grid">
-    <div class="project-card" *ngFor="let project of projects" (click)="navigateToGithub(project.githubLink)">
+    @for (project of projects; track project.id) {
+    <div class="project-card" (click)="navigateToGithub(project.githubLink)">
       <div class="project-image">
-        <img [src]="project.image" [alt]="project.title">
+        <img [src]="project.image" [alt]="project.title" />
       </div>
       <div class="project-content">
         <h3 class="project-title">{{ project.title }}</h3>
         <p class="project-description">{{ project.description }}</p>
         <div class="project-tech">
-          <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+          <div class="tech-tags">
+            @for (tech of project.technologies; track $index) {
+            <span class="tech-tag">{{ tech }}</span>
+            }
+          </div>
         </div>
       </div>
+    </div>
+    }
+
+    <div class="see-more-container">
+      <button class="see-more-btn" (click)="viewMoreProjects()">
+        Ver mais
+      </button>
     </div>
   </div>
 </div>
