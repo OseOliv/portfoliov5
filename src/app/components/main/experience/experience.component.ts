@@ -33,7 +33,7 @@ export class ExperienceComponent {
       ],
     },
     {
-      period: 'Ago 2022 - Atual',
+      period: 'Ago 2024 - Atual',
       company: 'AyaBese',
       role: 'Desenvolvedor de software júnior',
       description:
