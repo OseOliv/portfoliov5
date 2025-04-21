@@ -20,7 +20,7 @@ export class SkillsComponent {
     'React',
     'Angular',
     'Nest.js',
-    'Tailwind CSS',
+    'Tailwind',
     'SQLite',
     'Firebase',
     'PostgreSQL',
