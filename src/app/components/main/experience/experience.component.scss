@@ -135,18 +135,32 @@
   }
 }
 
-@media (max-width: 768px) {
-  .experience-card {
-    .card-header {
-      padding: 1rem;
+@media (max-width: 900px) {
+  .experience-section {
+    .experience-title {
+      font-size: 1.2rem;
+    }
+    .experience-cards {
+      flex-direction: column;
+      gap: 0;
+    }
 
-      .company {
-        font-size: 1.2rem;
+    .experience-card {
+      margin-bottom: 1.5rem;
+
+      .card-body {
+        padding: 0 1rem 1rem 1rem;
+
+        .description {
+          margin-top: 0;
+          font-size: 0.8rem;
+        }
       }
     }
 
-    .card-body {
-      padding: 1rem;
+    .experience-card:last-child {
+      margin-bottom: 0;
     }
   }
+
 }

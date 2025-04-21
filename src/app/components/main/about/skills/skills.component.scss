@@ -35,7 +35,8 @@
     }
 
     .skill-tag {
-      display: inline;
+      display: inline-block;
+      white-space: nowrap;
       color: #03e9f4;
       font-size: 0.85rem;
       font-weight: 500;
@@ -55,6 +56,18 @@
       &:hover {
         color: #bae6fd;
         text-shadow: 0 0 6px rgba(116, 192, 252, 0.4);
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .skills-section {
+    .skills-container {
+      padding: 0.5rem 1rem;
+
+      .skill-tag{
+        font-size: 0.7rem;
       }
     }
   }
