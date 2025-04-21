@@ -34,7 +34,11 @@ export class ExperienceComponent {
         'Nest.js',
         'Node.js',
         'Firebase',
-        'Ruby',
+        'Ruby on Rails',
+        'SCSS',
+        'Tailwind CSS',
+        'HTML',
+        'JavaScript'
       ],
       website: 'https://afrosaude.com.br',
     },
@@ -45,11 +49,17 @@ export class ExperienceComponent {
       description:
         'Na Ayabese, startup especializada em consultoria e soluções de desenvolvimento, atuo na criação e manutenção de sistemas que impulsionam a transformação digital dos nossos clientes.',
       technologies: [
+        'AngularJS',
+        'TypeScript',
+        'Nest.js',
         'Node.js',
+        'Firebase',
         'Ruby on Rails',
         'SCSS',
-        'TypeScript',
-        'AngularJS',
+        'Tailwind CSS',
+        'HTML',
+        'JavaScript',
+        'IA'
       ],
       website: '#',
     },
