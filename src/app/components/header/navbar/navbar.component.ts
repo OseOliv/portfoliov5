@@ -9,12 +9,18 @@ import { CommonModule } from '@angular/common';
   standalone: true,
 })
 export class NavbarComponent {
-  constructor() { }
+  constructor() {}
 
   scrollToElement(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+      const offset = 50;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth',
+      });
     }
   }
 }
