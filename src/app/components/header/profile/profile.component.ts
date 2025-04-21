@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
-  profileImage = 'profile.jpeg';
-  profileNameLogo = 'logo-nome-perfil.svg';
+  profileImage = 'assets/images/profile.jpeg';
+  profileNameLogo = 'assets/logo/logo-nome-perfil.svg';
 }
