@@ -7,6 +7,15 @@
         <img [src]="project.image" [alt]="project.title" />
       </div>
       <div class="project-content">
+        <a
+          [href]="project.githubLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="corner-link"
+          (click)="$event.stopPropagation()"
+        >
+          <fa-icon [icon]="faExternalLink"></fa-icon>
+        </a>
         <h3 class="project-title">{{ project.title }}</h3>
         <p class="project-description">{{ project.description }}</p>
         <div class="project-tech">

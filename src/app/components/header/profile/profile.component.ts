@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
   profileImage = 'profile.jpeg';
-
+  profileNameLogo = 'logo-nome-perfil.svg';
 }

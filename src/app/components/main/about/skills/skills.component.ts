@@ -15,11 +15,11 @@ export class SkillsComponent {
     'Python',
     'TypeScript',
     'Node.js',
+    'Ruby on Rails',
     'React.js',
     'React',
     'Angular',
     'Nest.js',
-    'Ruby on Rails',
     'SQL',
     'Firebase',
   ];

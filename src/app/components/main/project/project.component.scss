@@ -29,7 +29,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.05);
     color: #03e9f4;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     font-size: 0.9rem;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -76,6 +76,31 @@
     pointer-events: none;
     border-radius: 8px;
     z-index: 0;
+  }
+
+  .project-content {
+    flex: 1;
+    padding: 1.2rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    .corner-link {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+      color: #03e9f4;
+      font-size: 0.9rem;
+      transition: all 0.25s ease;
+      z-index: 2;
+
+      &:hover {
+        color: #bae6fd;
+        transform: translateY(-2px);
+        text-shadow: 0 0 6px rgba(116, 192, 252, 0.4);
+      }
+    }
   }
 
   .project-image {

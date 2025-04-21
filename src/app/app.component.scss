@@ -4,12 +4,11 @@
   align-items: center;
   min-height: 100%;
   width: 100%;
-  padding: 1rem;
 }
 
 .app {
   display: grid;
-  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-columns: 0.45fr 0.55fr;
   gap: 3rem;
   max-width: 70rem;
   width: 100%;
@@ -18,7 +17,6 @@
     position: sticky;
     top: 1rem;
     height: calc(100vh - 2rem);
-    overflow-y: auto;
   }
 
   .main {
@@ -26,6 +24,5 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 4rem;
   }
 }
