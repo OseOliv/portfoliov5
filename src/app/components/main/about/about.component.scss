@@ -11,8 +11,12 @@
     .about-text {
       line-height: 1.42;
       color: #d7f5ff;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 0.9rem;
+
+      strong {
+        color: #e3f4fa;
+      }
     }
   }
 }
