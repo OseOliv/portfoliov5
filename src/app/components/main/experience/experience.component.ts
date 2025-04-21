@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
-
 interface Experience {
   period: string;
   company: string;
@@ -28,7 +27,7 @@ export class ExperienceComponent {
       company: 'AfroSaúde',
       role: 'Desenvolvedor de software júnior',
       description:
-        'Na AfroSaúde, uma empresa focada em teleatendimento para saúde mental, atuo no desenvolvimento e aprimoramento de aplicações que melhoram a experiência do usuário e otimizam processos internos. Criando soluções tecnológicas que tornem o atendimento mais acessível, eficiente e humanizado, impactando positivamente a jornada dos profissionais e pacientes.',
+        'Através da Ayabese, presto consultoria tecnológica para a AfroSaúde, uma healthtech focada em saúde mental. Na AfroSaúde, empresa focada em saúde mental via teleatendimento, atuo no desenvolvimento de soluções tecnológicas que melhoram a experiência do usuário e otimizam processos internos. Também realizo integrações com inteligência artificial, Typebots, chatbots e fluxos de automação, tornando o atendimento mais acessível, eficiente e humanizado para profissionais e pacientes.',
       technologies: [
         'AngularJS',
         'TypeScript',
@@ -52,7 +51,7 @@ export class ExperienceComponent {
         'TypeScript',
         'AngularJS',
       ],
-      website: '#'
+      website: '#',
     },
   ];
 }
