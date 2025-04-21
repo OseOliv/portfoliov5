@@ -59,7 +59,8 @@ export class ExperienceComponent {
         'Tailwind CSS',
         'HTML',
         'JavaScript',
-        'IA'
+        'IA',
+        'PostgreSQL'
       ],
       website: '#',
     },
