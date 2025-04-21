@@ -25,26 +25,35 @@ export class ProjectComponent {
   projects: Project[] = [
     {
       id: 1,
+      title: 'Portfólio V3 (oseasoliveira.com)',
+      description:
+        'Esta é uma versão anterior do meu portfólio. Mantenho disponível para fins de comparação e para mostrar a evolução do meu trabalho ao longo do tempo.',
+      image: 'assets/projects/portfoliov3.png',
+      technologies: ['React.js', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/OseOliv/portfoliov3',
+    },
+    {
+      id: 2,
       title: 'OP:Memory Game',
       description:
         'Este é um jogo da memória envolvendo os adorados personagens da série One Piece',
-      image: 'opmemory.png',
+      image: 'assets/projects/opmemory.png',
       technologies: ['React.js', 'CSS', 'TypeScript'],
       githubLink: 'https://github.com/OseOliv/op-memory-game',
     },
     {
-      id: 2,
+      id: 3,
       title: 'IMC App',
       description:
         'Um aplicativo para calcular o Índice de Massa Corpórea (IMC)',
-      image: 'imc.png',
+      image: 'assets/projects/imc.png',
       technologies: ['React.js', 'CSS', 'TypeScript'],
       githubLink: 'https://github.com/OseOliv/IMC-APP-TS',
-    }
+    },
   ];
 
   navigateToGithub(url: string): void {
-      window.open(url, '_blank');
+    window.open(url, '_blank');
   }
 
   viewMoreProjects(): void {
