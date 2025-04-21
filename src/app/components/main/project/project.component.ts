@@ -50,6 +50,15 @@ export class ProjectComponent {
       technologies: ['React.js', 'CSS', 'TypeScript'],
       githubLink: 'https://github.com/OseOliv/IMC-APP-TS',
     },
+    {
+      id: 4,
+      title: 'Cinema App',
+      description:
+        'Aplicativo móvel para explorar sinopses, elencos e detalhes dos artistas, utilizando a API do TMDB.',
+      image: 'assets/projects/movieapp.gif',
+      technologies: ['React Native', 'JavaScript', 'Tailwind CSS'],
+      githubLink: 'https://github.com/OseOliv/movie-app-mobile',
+    },
   ];
 
   navigateToGithub(url: string): void {
