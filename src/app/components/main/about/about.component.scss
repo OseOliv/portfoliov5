@@ -20,3 +20,24 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .about {
+    .about-title {
+      font-size: 1.2rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-text {
+      font-size: 0.8rem;
+    }
+
+    .about-profile {
+      .about-text {
+        line-height: 1.2;
+      }
+    }
+  }
+
+}

@@ -26,3 +26,17 @@
     align-items: center;
   }
 }
+
+@media (max-width: 900px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .header {
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
+  }
+}
