@@ -1,5 +1,5 @@
 services:
-  portfolio-app:
+  portfolio:
     build:
       context: .
       dockerfile: Dockerfile
