@@ -29,7 +29,7 @@ import {
       state(
         'void',
         style({
-          transform: 'translateY(200px)',
+          transform: 'translateX(100px)',
           opacity: 0,
         })
       ),
