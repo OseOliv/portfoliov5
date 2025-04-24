@@ -7,6 +7,31 @@
     margin-bottom: 1.5rem;
     color: #03e9f4;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 2px;
+      background-color: #892be2c5;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-2px) scale(1.01);
+      text-shadow: 0 0 8px rgba(3, 233, 244, 0.6);
+
+      &:before {
+        width: 35px;
+        background-color: #892be2;
+        box-shadow: 0 0 8px rgba(137, 43, 226, 0.6);
+      }
+    }
   }
 }
 
@@ -139,7 +164,12 @@
   .experience-section {
     .experience-title {
       font-size: 1.2rem;
+
+      &:before {
+        width: 20px;
+      }
     }
+
     .experience-cards {
       flex-direction: column;
       gap: 0;
