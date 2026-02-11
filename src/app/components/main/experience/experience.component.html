@@ -1,5 +1,5 @@
 <section id="experience" class="experience-section">
-  <h2 class="experience-title">EXPERIÊNCIA</h2>
+  <h2 class="experience-title">{{ title() }}</h2>
   <div class="experience-cards">
     @for (experience of experiences; track $index) {
     <div class="experience-card">
@@ -23,7 +23,7 @@
 
         @if (experience.activities && experience.activities.length > 0) {
         <div class="activities">
-          <h5 class="activities-title">Principais atividades:</h5>
+          <h5 class="activities-title">{{ mainActivitiesText() }}</h5>
           <ul class="activities-list">
             @for (activity of experience.activities; track $index) {
             <li [innerHTML]="activity"></li>

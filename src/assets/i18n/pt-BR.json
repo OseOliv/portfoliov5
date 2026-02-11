@@ -1,0 +1,69 @@
+{
+  "header": {
+    "profile": {
+      "subtitle": "Desenvolvedor de Software",
+      "description": "Building solutions through code."
+    },
+    "navbar": {
+      "about": "SOBRE",
+      "experience": "EXPERIÊNCIA",
+      "projects": "PROJETOS"
+    }
+  },
+  "about": {
+    "title": "SOBRE",
+    "greeting": "Olá, sou",
+    "name": "Oséas Oliveira",
+    "intro": "Sou <strong>desenvolvedor de software</strong> apaixonado por transformar ideias em soluções digitais funcionais e acessíveis. Tenho me dedicado a fortalecer minhas habilidades tanto no <strong>front-end</strong> quanto no <strong>back-end</strong>, buscando sempre excelência técnica e <strong>impacto real</strong>.",
+    "passion": "Combino <strong>pensamento analítico</strong> com <strong>criatividade</strong> para resolver desafios de programação, sempre com uma mentalidade prática e um forte compromisso com o <strong>crescimento contínuo</strong>. Meu objetivo é construir aplicações que melhorem a experiência do usuário, otimizem processos essenciais e contribuam para serviços digitais mais <strong>acessíveis</strong> e <strong>humanizados</strong>.",
+    "currentFocus": "Atualmente, trabalho no desenvolvimento de aplicações web com ênfase em <strong>usabilidade</strong>, <strong>performance</strong> e <strong>eficiência</strong>. Tenho participado de projetos que apoiam a transformação digital e geram <strong>valor significativo</strong> para os usuários finais.",
+    "callToAction": "Estou comprometido em aprimorar minha <strong>expertise técnica</strong> e desenvolver soluções que criem <strong>valor real</strong>.",
+    "skills": {
+      "description": "Linguagens, frameworks e bibliotecas com as quais tenho experiência:"
+    }
+  },
+  "projects": {
+    "title": "PROJETOS",
+    "seeMore": "Ver mais",
+    "list": [
+      {
+        "id": 1,
+        "title": "Mentalaize",
+        "description": "A Mentalaize é uma plataforma de gestão de risco psicológico para empresas que utiliza inteligência artificial para monitorar, analisar e promover a saúde emocional dos colaboradores.",
+        "technologies": ["Ruby On Rails", "Tailwind", "IA", "Typebot"]
+      },
+      {
+        "id": 2,
+        "title": "OP:Memory Game",
+        "description": "Este é um jogo da memória envolvendo os adorados personagens da série One Piece",
+        "technologies": ["React.js", "CSS", "TypeScript"]
+      },
+      {
+        "id": 3,
+        "title": "IMC App",
+        "description": "Um aplicativo para calcular o Índice de Massa Corpórea (IMC)",
+        "technologies": ["React.js", "CSS", "TypeScript"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "EXPERIÊNCIA",
+    "mainActivities": "Principais atividades:",
+    "list": [
+      {
+        "period": "Agosto de 2024 - Janeiro de 2026",
+        "company": "Ayabese / AfroSaúde",
+        "role": "Desenvolvedor de Software",
+        "description": "Atuei simultaneamente na Ayabese, empresa de consultoria e desenvolvimento tecnológico, e na AfroSaúde, healthtech especializada em saúde mental via teleatendimento. A Ayabese presta serviços para a AfroSaúde, e em ambas contribuí no desenvolvimento de soluções digitais voltadas à melhoria da experiência do usuário e à otimização de processos internos.",
+        "activities": [
+          "<strong>Desenvolvimento e manutenção de sistemas</strong> com <strong>Node.js</strong>, <strong>TypeScript</strong> e <strong>Ruby on Rails</strong>, com foco em <strong>eficiência</strong> e <strong>escalabilidade</strong>",
+          "<strong>Implementação de integrações</strong> com <strong>inteligência artificial</strong>, <strong>Typebots</strong> e <strong>chatbots</strong>",
+          "<strong>Criação de APIs REST</strong> e <strong>fluxos de automação</strong>",
+          "<strong>Suporte técnico</strong> às equipes de produto e atendimento da <strong>AfroSaúde</strong>"
+        ],
+        "technologies": ["AngularJS", "TypeScript", "Nest.js", "Node.js", "Firebase", "Ruby on Rails", "CSS", "Tailwind", "HTML", "JavaScript", "PostgreSQL", "Docker", "Inteligência Artificial", "Typebots", "Chatbots"],
+        "website": "https://afrosaude.com.br"
+      }
+    ]
+  }
+}

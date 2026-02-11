@@ -1,0 +1,23 @@
+<div class="language-selector">
+  <button
+    class="flag-btn"
+    [class.active]="isActive('pt-BR')"
+    (click)="changeLanguage('pt-BR')"
+    title="Português"
+  >
+    <span class="flag">
+      <img src="/assets/flags/br.svg" alt="Brazil Flag" />
+    </span>
+  </button>
+
+  <button
+    class="flag-btn"
+    [class.active]="isActive('en')"
+    (click)="changeLanguage('en')"
+    title="English"
+  >
+    <span class="flag">
+      <img src="/assets/flags/gb.svg" alt="English Flag" />
+    </span>
+  </button>
+</div>
