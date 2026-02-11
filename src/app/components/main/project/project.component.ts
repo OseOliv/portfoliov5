@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 interface Project {
   id: number;
@@ -21,6 +22,7 @@ interface Project {
 })
 export class ProjectComponent {
   faExternalLink = faExternalLinkAlt;
+  faGithub = faGithub;
 
   projects: Project[] = [
     {
