@@ -21,11 +21,19 @@
     .navbar {
       // margin-top: var(--spacing-8);
     }
+
+    .language-selector-wrapper-desktop {
+      margin-top: var(--spacing-4);
+    }
   }
 
   .social-link {
     margin-top: auto;
     padding-top: var(--spacing-8);
+
+    .language-selector-wrapper-mobile {
+      display: none;
+    }
   }
 }
 
@@ -56,11 +64,21 @@
       .navbar {
         margin-top: var(--spacing-4);
       }
+
+      .language-selector-wrapper-desktop {
+        display: none;
+      }
     }
 
     .social-link {
       // margin-top: var(--spacing-6);
       padding-top: 0;
+      display: contents;
+
+      .language-selector-wrapper-mobile {
+        display: flex;
+        margin-top: var(--spacing-4);
+      }
     }
   }
 }

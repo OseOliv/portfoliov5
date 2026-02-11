@@ -1,0 +1,69 @@
+{
+  "header": {
+    "profile": {
+      "subtitle": "Software Developer",
+      "description": "Building solutions through code."
+    },
+    "navbar": {
+      "about": "ABOUT",
+      "experience": "EXPERIENCE",
+      "projects": "PROJECTS"
+    }
+  },
+  "about": {
+    "title": "ABOUT",
+    "greeting": "Hello, I'm",
+    "name": "Oséas Oliveira",
+    "intro": "I'm a <strong>software developer</strong> passionate about transforming ideas into functional and accessible digital solutions. I've been dedicated to strengthening my skills in both <strong>front-end</strong> and <strong>back-end</strong>, always seeking technical excellence and <strong>real impact</strong>.",
+    "passion": "I combine <strong>analytical thinking</strong> with <strong>creativity</strong> to solve programming challenges, always with a practical mindset and a strong commitment to <strong>continuous growth</strong>. My goal is to build applications that improve user experience, optimize essential processes, and contribute to more <strong>accessible</strong> and <strong>humanized</strong> digital services.",
+    "currentFocus": "Currently, I work on developing web applications with emphasis on <strong>usability</strong>, <strong>performance</strong>, and <strong>efficiency</strong>. I've participated in projects that support digital transformation and generate <strong>significant value</strong> for end users.",
+    "callToAction": "I'm committed to improving my <strong>technical expertise</strong> and developing solutions that create <strong>real value</strong>.",
+    "skills": {
+      "description": "Languages, frameworks, and libraries I have experience with:"
+    }
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "seeMore": "See more",
+    "list": [
+      {
+        "id": 1,
+        "title": "Mentalaize",
+        "description": "Mentalaize is a psychological risk management platform for companies that uses artificial intelligence to monitor, analyze and promote employees' emotional health.",
+        "technologies": ["Ruby On Rails", "Tailwind", "AI", "Typebot"]
+      },
+      {
+        "id": 2,
+        "title": "OP:Memory Game",
+        "description": "This is a memory game featuring the beloved characters from the One Piece series",
+        "technologies": ["React.js", "CSS", "TypeScript"]
+      },
+      {
+        "id": 3,
+        "title": "BMI App",
+        "description": "An application to calculate Body Mass Index (BMI)",
+        "technologies": ["React.js", "CSS", "TypeScript"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "EXPERIENCE",
+    "mainActivities": "Main activities:",
+    "list": [
+      {
+        "period": "August 2024 - January 2026",
+        "company": "Ayabese / AfroSaúde",
+        "role": "Software Developer",
+        "description": "I worked simultaneously at Ayabese, a technology consulting and development company, and at AfroSaúde, a healthtech specialized in mental health via teleservice. Ayabese provides services to AfroSaúde, and at both I contributed to developing digital solutions aimed at improving user experience and optimizing internal processes.",
+        "activities": [
+          "<strong>Development and maintenance of systems</strong> with <strong>Node.js</strong>, <strong>TypeScript</strong>, and <strong>Ruby on Rails</strong>, focusing on <strong>efficiency</strong> and <strong>scalability</strong>",
+          "<strong>Implementation of integrations</strong> with <strong>artificial intelligence</strong>, <strong>Typebots</strong>, and <strong>chatbots</strong>",
+          "<strong>Creation of REST APIs</strong> and <strong>automation workflows</strong>",
+          "<strong>Technical support</strong> to <strong>AfroSaúde's</strong> product and customer service teams"
+        ],
+        "technologies": ["AngularJS", "TypeScript", "Nest.js", "Node.js", "Firebase", "Ruby on Rails", "CSS", "Tailwind", "HTML", "JavaScript", "PostgreSQL", "Docker", "Artificial Intelligence", "Typebots", "Chatbots"],
+        "website": "https://afrosaude.com.br"
+      }
+    ]
+  }
+}

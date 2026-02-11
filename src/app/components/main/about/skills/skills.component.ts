@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
+import { TranslationService } from '../../../../core/services/translation.service';
 
 @Component({
   selector: 'app-skills',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss',
 })
-export class SkillsComponent {
+export class SkillsComponent implements OnInit {
+  description = signal<string>('');
+  
   skills: string[] = [
     'HTML',
     'CSS',
@@ -25,4 +28,17 @@ export class SkillsComponent {
     'Firebase',
     'PostgreSQL',
   ];
+
+  constructor(private translationService: TranslationService) {}
+
+  ngOnInit(): void {
+    this.loadTranslations();
+    this.translationService.currentLanguage$.subscribe(() => {
+      this.loadTranslations();
+    });
+  }
+
+  private loadTranslations(): void {
+    this.description.set(this.translationService.translate('about.skills.description'));
+  }
 }

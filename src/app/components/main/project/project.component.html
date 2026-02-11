@@ -1,6 +1,6 @@
 <section class="projects">
   <div id="projects" class="projects-container">
-    <h2 class="projects-title">PROJETOS</h2>
+    <h2 class="projects-title">{{ title() }}</h2>
     <div class="projects-grid">
       @for (project of projects; track project.id) {
       <div class="project-card" (click)="navigateToGithub(project.githubLink)">
@@ -33,7 +33,7 @@
       <div class="see-more-container">
         <button class="see-more-btn" (click)="viewMoreProjects()">
           <fa-icon [icon]="faGithub"></fa-icon>
-          Ver mais
+          {{ seeMoreText() }}
         </button>
       </div>
     </div>
