@@ -1,31 +1,18 @@
 <section id="about" class="about">
-  <h2 class="about-title">SOBRE</h2>
+  <h2 class="about-title">{{ title() }}</h2>
   <div class="about-profile">
     <span class="about-text">
-      Olá, sou <strong>Oséas Oliveira</strong><br /><br />
+      {{ greeting() }} <strong>{{ name() }}</strong><br /><br />
 
-      Sou <strong>desenvolvedor de software</strong> apaixonado por transformar 
-      ideias em soluções digitais funcionais e acessíveis. Tenho me dedicado a 
-      fortalecer minhas habilidades tanto no <strong>front-end</strong> quanto 
-      no <strong>back-end</strong>, buscando sempre excelência técnica e 
-      <strong>impacto real</strong>.<br /><br />
+      <span [innerHTML]="intro()"></span><br /><br />
 
-      Combino <strong>pensamento analítico</strong> com 
-      <strong>criatividade</strong> para resolver desafios de programação, 
-      sempre com uma mentalidade prática e um forte compromisso com o 
-      <strong>crescimento contínuo</strong>. Meu objetivo é construir aplicações 
-      que melhorem a experiência do usuário, otimizem processos essenciais e 
-      contribuam para serviços digitais mais <strong>acessíveis</strong> e 
-      <strong>humanizados</strong>.<br /><br />
+      <span [innerHTML]="passion()"></span><br /><br />
 
-      Atualmente, trabalho no desenvolvimento de aplicações web com ênfase em 
-      <strong>usabilidade</strong>, <strong>performance</strong> e 
-      <strong>eficiência</strong>. Tenho participado de projetos que apoiam a 
-      transformação digital e geram <strong>valor significativo</strong> para 
-      os usuários finais.<br /><br />
+      <span [innerHTML]="currentFocus()"></span><br /><br />
 
-      Estou comprometido em aprimorar minha <strong>expertise técnica</strong> 
-      e desenvolver soluções que criem <strong>valor real</strong>.<br /><br />
+      <span [innerHTML]="callToAction()"></span><br /><br />
     </span>
   </div>
+
+  <app-skills></app-skills>
 </section>

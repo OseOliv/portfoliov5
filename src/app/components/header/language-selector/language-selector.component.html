@@ -1,0 +1,16 @@
+<div class="language-selector">
+  <button 
+    class="flag-btn" 
+    [class.active]="isActive('pt-BR')"
+    (click)="changeLanguage('pt-BR')"
+    title="Português">
+    <span class="flag">🇧🇷</span>
+  </button>
+  <button 
+    class="flag-btn" 
+    [class.active]="isActive('en')"
+    (click)="changeLanguage('en')"
+    title="English">
+    <span class="flag">🇺🇸</span>
+  </button>
+</div>
