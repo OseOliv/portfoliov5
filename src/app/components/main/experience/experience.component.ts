@@ -8,6 +8,7 @@ interface Experience {
   company: string;
   role: string;
   description: string;
+  activities?: string[];
   technologies: string[];
   website?: string;
 }
@@ -23,31 +24,17 @@ export class ExperienceComponent {
 
   experiences: Experience[] = [
     {
-      period: 'Set 2024 - Atual',
-      company: 'AfroSaúde',
-      role: 'Desenvolvedor de software júnior',
+      period: 'Agosto de 2024 - Janeiro de 2026',
+      company: 'Ayabese / AfroSaúde',
+      role: 'Desenvolvedor de Software',
       description:
-        'Através da Ayabese, presto consultoria tecnológica para a AfroSaúde, uma healthtech focada em saúde mental. Na AfroSaúde, empresa focada em saúde mental via teleatendimento, atuo no desenvolvimento de soluções tecnológicas que melhoram a experiência do usuário e otimizam processos internos. Também realizo integrações com inteligência artificial, Typebots, chatbots e fluxos de automação, tornando o atendimento mais acessível, eficiente e humanizado para profissionais e pacientes.',
-      technologies: [
-        'AngularJS',
-        'TypeScript',
-        'Nest.js',
-        'Node.js',
-        'Firebase',
-        'Ruby on Rails',
-        'SCSS',
-        'Tailwind CSS',
-        'HTML',
-        'JavaScript'
+        'Atuei simultaneamente na Ayabese, empresa de consultoria e desenvolvimento tecnológico, e na AfroSaúde, healthtech especializada em saúde mental via teleatendimento. A Ayabese presta serviços para a AfroSaúde, e em ambas contribuí no desenvolvimento de soluções digitais voltadas à melhoria da experiência do usuário e à otimização de processos internos.',
+      activities: [
+        '<strong>Desenvolvimento e manutenção de sistemas</strong> com <strong>Node.js</strong>, <strong>TypeScript</strong> e <strong>Ruby on Rails</strong>, com foco em <strong>eficiência</strong> e <strong>escalabilidade</strong>',
+        '<strong>Implementação de integrações</strong> com <strong>inteligência artificial</strong>, <strong>Typebots</strong> e <strong>chatbots</strong>',
+        '<strong>Criação de APIs REST</strong> e <strong>fluxos de automação</strong>',
+        '<strong>Suporte técnico</strong> às equipes de produto e atendimento da <strong>AfroSaúde</strong>'
       ],
-      website: 'https://afrosaude.com.br',
-    },
-    {
-      period: 'Ago 2024 - Atual',
-      company: 'AyaBese',
-      role: 'Desenvolvedor de software júnior',
-      description:
-        'Na Ayabese, startup especializada em consultoria e soluções de desenvolvimento, atuo na criação e manutenção de sistemas que impulsionam a transformação digital dos nossos clientes.',
       technologies: [
         'AngularJS',
         'TypeScript',
@@ -55,14 +42,17 @@ export class ExperienceComponent {
         'Node.js',
         'Firebase',
         'Ruby on Rails',
-        'SCSS',
-        'Tailwind CSS',
+        'CSS',
+        'Tailwind',
         'HTML',
         'JavaScript',
-        'IA',
-        'PostgreSQL'
+        'PostgreSQL',
+        'Docker',
+        'Inteligência Artificial',
+        'Typebots',
+        'Chatbots'
       ],
-      website: '#',
+      website: 'https://afrosaude.com.br',
     },
   ];
 }

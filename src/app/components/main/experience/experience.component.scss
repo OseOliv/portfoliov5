@@ -115,6 +115,63 @@
       color: var(--color-text-body);
     }
 
+    .activities {
+      margin-bottom: var(--spacing-5);
+
+      .activities-title {
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-semibold);
+        color: var(--color-text-heading);
+        margin-bottom: var(--spacing-3);
+        font-family: var(--font-sans);
+        letter-spacing: var(--letter-spacing-tight);
+      }
+
+      .activities-list {
+        margin: 0;
+        list-style: none;
+
+        li {
+          position: relative;
+          padding-left: var(--spacing-4);
+          margin-bottom: var(--spacing-3);
+          line-height: var(--line-height-relaxed);
+          font-size: var(--font-size-sm);
+          color: var(--color-text-body);
+          transition: color 0.3s ease, transform 0.2s ease;
+
+          &:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent-primary);
+            font-size: var(--font-size-lg);
+            line-height: 1;
+            font-weight: var(--font-weight-bold);
+            transition: transform 0.2s ease;
+          }
+
+          strong {
+            color: var(--color-text-heading);
+            font-weight: var(--font-weight-semibold);
+          }
+
+          &:hover {
+            color: var(--color-text-heading);
+            transform: translateX(4px);
+
+            &:before {
+              transform: translateX(4px);
+            }
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
     .technologies {
       .tech-tags {
         display: flex;
@@ -125,7 +182,7 @@
         .tech-tag {
           display: inline;
           color: var(--color-accent-primary);
-          font-size: var(--font-size-sm);
+          font-size: 10px;
           font-weight: var(--font-weight-medium);
           font-family: var(--font-mono);
           transition: color 0.3s ease;
@@ -185,6 +242,25 @@
 
         .description {
           font-size: var(--font-size-sm);
+        }
+
+        .activities {
+          .activities-title {
+            font-size: var(--font-size-xs);
+          }
+
+          .activities-list {
+
+            li {
+              font-size: var(--font-size-xs);
+              padding-left: var(--spacing-3);
+              margin-bottom: var(--spacing-2);
+
+              &:before {
+                font-size: var(--font-size-base);
+              }
+            }
+          }
         }
 
         .technologies .tech-tags .tech-tag {

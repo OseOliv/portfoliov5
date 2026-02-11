@@ -21,6 +21,17 @@
       <div class="card-body">
         <p class="description">{{ experience.description }}</p>
 
+        @if (experience.activities && experience.activities.length > 0) {
+        <div class="activities">
+          <h5 class="activities-title">Principais atividades:</h5>
+          <ul class="activities-list">
+            @for (activity of experience.activities; track $index) {
+            <li [innerHTML]="activity"></li>
+            }
+          </ul>
+        </div>
+        }
+
         <div class="technologies">
           <div class="tech-tags">
             @for (tech of experience.technologies; track $index) {
