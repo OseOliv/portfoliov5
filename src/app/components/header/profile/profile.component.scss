@@ -12,17 +12,20 @@
   .name {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 
     .profile-image {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       margin-bottom: var(--spacing-6);
       position: relative;
+      width: 11rem;
+      height: 11rem;
 
       img {
-        width: 11rem;
-        height: 11rem;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
         object-fit: cover;
         border: 3px solid var(--color-accent-primary);
@@ -46,8 +49,8 @@
         position: absolute;
         top: -4px;
         left: -4px;
-        right: -4px;
-        bottom: -4px;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
         border-radius: 50%;
         background: var(--color-accent-gradient);
         z-index: 0;
@@ -141,10 +144,12 @@
       .profile-image {
         justify-content: center;
         margin-bottom: var(--spacing-4);
+        width: 9rem;
+        height: 9rem;
 
         img {
-          width: 9rem;
-          height: 9rem;
+          width: 100%;
+          height: 100%;
         }
       }
 
