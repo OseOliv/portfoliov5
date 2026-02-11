@@ -1,0 +1,49 @@
+.animate-base {
+  animation-fill-mode: both;
+  animation-duration: var(--duration-slow);
+}
+.animate-fade-in {
+  @extend .animate-base;
+  animation-name: fadeIn;
+}
+
+.animate-fade-in-up {
+  @extend .animate-base;
+  animation-name: fadeInUp;
+  animation-duration: var(--duration-slower);
+}
+
+.animate-fade-in-down {
+  @extend .animate-base;
+  animation-name: fadeInDown;
+}
+.animate-slide-in-left {
+  @extend .animate-base;
+  animation-name: slideInLeft;
+}
+
+.animate-slide-in-right {
+  @extend .animate-base;
+  animation-name: slideInRight;
+}
+.animate-scale-in {
+  @extend .animate-base;
+  animation-name: scaleIn;
+  animation-duration: var(--duration-normal);
+}
+.animate-rotate-in {
+  @extend .animate-base;
+  animation-name: rotateIn;
+}
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+.duration-fast { animation-duration: var(--duration-fast); }
+.duration-normal { animation-duration: var(--duration-normal); }
+.duration-slow { animation-duration: var(--duration-slow); }
+.duration-slower { animation-duration: var(--duration-slower); }

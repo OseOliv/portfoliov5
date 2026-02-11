@@ -1,46 +1,51 @@
 .about {
+  width: 100%;
+
   .about-title {
-    margin-top: 5rem;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #03e9f4;
-    font-weight: 400;
+    margin-top: var(--spacing-20);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-6);
+    color: var(--color-text-heading);
     display: flex;
     align-items: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    transition: var(--transition-base);
+    cursor: default;
+    font-family: var(--font-sans);
+    letter-spacing: var(--letter-spacing-tight);
 
     &:before {
       content: "";
       display: inline-block;
-      width: 25px;
-      height: 2px;
-      background-color: #892be2c5;
-      margin-right: 10px;
-      transition: all 0.3s ease;
+      width: var(--spacing-8);
+      height: 3px;
+      background: var(--color-accent-gradient);
+      margin-right: var(--spacing-4);
+      border-radius: var(--radius-full);
+      transition: var(--transition-base);
     }
 
     &:hover {
-      transform: translateY(-2px) scale(1.01);
-      text-shadow: 0 0 8px rgba(3, 233, 244, 0.6);
-
+      color: var(--color-accent-primary);
+      
       &:before {
-        width: 35px;
-        background-color: #892be2;
-        box-shadow: 0 0 8px rgba(137, 43, 226, 0.6);
+        width: var(--spacing-12);
+        box-shadow: var(--shadow-glow);
       }
     }
   }
 
   .about-profile {
     .about-text {
-      line-height: 1.42;
-      color: #d7f5ff;
-      font-weight: 400;
-      font-size: 0.9rem;
+      line-height: var(--line-height-relaxed);
+      color: var(--color-text-body);
+      font-weight: var(--font-weight-regular);
+      font-size: var(--font-size-base);
+      font-family: var(--font-sans);
 
       strong {
-        color: #e3f4fa;
+        color: var(--color-text-heading);
+        font-weight: var(--font-weight-semibold);
       }
     }
   }
@@ -49,24 +54,20 @@
 @media (max-width: 900px) {
   .about {
     .about-title {
-      font-size: 1.2rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: var(--font-size-xl);
+      margin-top: var(--spacing-12);
+      margin-bottom: var(--spacing-4);
 
       &:before {
-        width: 20px;
+        width: var(--spacing-6);
       }
-    }
-
-    .about-text {
-      font-size: 0.8rem;
     }
 
     .about-profile {
       .about-text {
-        line-height: 1.2;
+        font-size: var(--font-size-sm);
+        line-height: var(--line-height-normal);
       }
     }
   }
-
 }

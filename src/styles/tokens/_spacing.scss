@@ -1,0 +1,52 @@
+:root {
+  --spacing-base: 0.25rem;
+  
+  --spacing-0: 0;
+  --spacing-1: calc(var(--spacing-base) * 1);
+  --spacing-2: calc(var(--spacing-base) * 2);
+  --spacing-3: calc(var(--spacing-base) * 3);
+  --spacing-4: calc(var(--spacing-base) * 4);
+  --spacing-5: calc(var(--spacing-base) * 5);
+  --spacing-6: calc(var(--spacing-base) * 6);
+  --spacing-8: calc(var(--spacing-base) * 8);
+  --spacing-10: calc(var(--spacing-base) * 10);
+  --spacing-12: calc(var(--spacing-base) * 12);
+  --spacing-16: calc(var(--spacing-base) * 16);
+  --spacing-20: calc(var(--spacing-base) * 20);
+  --spacing-24: calc(var(--spacing-base) * 24);
+  --spacing-32: calc(var(--spacing-base) * 32);
+  
+  --spacing-section-gap: var(--spacing-24);
+  --spacing-component-gap: var(--spacing-8);
+  --spacing-element-gap: var(--spacing-4);
+  
+  --radius-none: 0;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-section-gap: var(--spacing-16);
+    --spacing-component-gap: var(--spacing-6);
+  }
+}
