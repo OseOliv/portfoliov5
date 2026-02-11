@@ -53,6 +53,29 @@ ng serve
 
 Navigate to `http://localhost:4200/` in your browser. The application will automatically reload if you change any of the source files.
 
+### Running with Docker
+
+To run the project using Docker:
+
+1. Build and start the container:
+```bash
+docker-compose up
+```
+
+2. The application will be available at `http://localhost:4200/`
+
+3. To run in detached mode:
+```bash
+docker-compose up -d
+```
+
+4. To stop the container:
+```bash
+docker-compose down
+```
+
+**Note**: The Docker setup includes hot-reload, so any changes you make to the source files will automatically trigger a rebuild.
+
 ### Building for Production
 
 ```bash
