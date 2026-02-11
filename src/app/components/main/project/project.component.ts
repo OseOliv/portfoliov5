@@ -24,15 +24,6 @@ export class ProjectComponent {
 
   projects: Project[] = [
     {
-      id: 1,
-      title: 'Portfólio V3 (oseasoliveira.com)',
-      description:
-        'Esta é uma versão anterior do meu portfólio. Mantenho disponível para fins de comparação e para mostrar a evolução do meu trabalho ao longo do tempo.',
-      image: 'assets/projects/portfoliov3.png',
-      technologies: ['React.js', 'CSS', 'JavaScript'],
-      githubLink: 'https://github.com/OseOliv/portfoliov3',
-    },
-    {
       id: 2,
       title: 'OP:Memory Game',
       description:
@@ -49,15 +40,6 @@ export class ProjectComponent {
       image: 'assets/projects/imc.png',
       technologies: ['React.js', 'CSS', 'TypeScript'],
       githubLink: 'https://github.com/OseOliv/IMC-APP-TS',
-    },
-    {
-      id: 4,
-      title: 'Cinema App',
-      description:
-        'Aplicativo móvel para explorar sinopses, elencos e detalhes dos artistas, utilizando a API do TMDB.',
-      image: 'assets/projects/movieapp.gif',
-      technologies: ['React Native', 'JavaScript', 'Tailwind CSS'],
-      githubLink: 'https://github.com/OseOliv/movie-app-mobile',
     },
   ];
 
